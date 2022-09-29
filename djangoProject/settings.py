@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6-_*d(hd1)^lg!3$3y99(xem^xgqpe86mh!3r&gi7pf+mhxpbt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','https://ddjango-todo-list.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost','ddjango-todo-list.herokuapp.com']
 
 STATICFILES_DIRS = [
     "main/static"
