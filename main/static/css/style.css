@@ -1,0 +1,47 @@
+
+#content1 {
+    margin-left: 300px;
+    overflow: hidden;
+}
+
+.ttl {
+    margin-left: 15px;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+    transition: 0.5s ease;
+    gap: 4vh;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.new-item{
+    height: 30px;
+    margin-right:50px;
+}
