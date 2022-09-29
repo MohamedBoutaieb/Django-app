@@ -25,6 +25,7 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('create', views.create, name="create"),
     path("<int:id>", views.index, name="index"),
+    path("bank", views.bank, name="bank"),
 
     # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}),
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),

@@ -13,3 +13,9 @@ class Item(models.Model):
     todoist = models.ForeignKey(ToDoList, on_delete=models.CASCADE)
     text = models.CharField(max_length=300)
     compete = models.BooleanField()
+
+class BankAccount(models.Model):
+    balance = models.FloatField(default=0)
+    negative = models.BooleanField(default=False)
+    def getBalance(self):
+        return self.balance

@@ -13,7 +13,6 @@
     align-items: center;
     gap: 30px;
 }
-
 .sidenav {
     height: 100%;
     width: 200px;
@@ -28,15 +27,28 @@
     justify-content: space-around;
 }
 
-.sidenav a {
+.sidenav .items {
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 2vw;
     color: black;
     transition: 0.5s ease;
     gap: 4vh;
     text-align: center;
 }
-
+a {
+    text-decoration: none;
+}
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+.anchor:hover{
+    text-decoration: none;
+    color: black;
+}
+ul{
+     text-decoration: none;
+}
 a:hover {
     text-decoration: none;
     transform: scale(1.1);
@@ -44,4 +56,7 @@ a:hover {
 .new-item{
     height: 30px;
     margin-right:50px;
+}
+.rouge{
+    color: red;
 }
