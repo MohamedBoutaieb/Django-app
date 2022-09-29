@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import serve
+# from django.conf.urls import u
 from main import views
 urlpatterns = [
     path('home/', views.home, name="home"),
