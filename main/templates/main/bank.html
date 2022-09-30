@@ -3,17 +3,56 @@
 
 {% block content %} <h3>My Bank Account</h3>
     <br>
-    <h1> My balance </h1>
-    <h2 class ="{{ blc }}"> {{ account.balance}} USD </h2>
-    <form method="post" action="bank" class="form-group">
-        {% csrf_token %}
-        <div class="input-group mb-3">
-            <div class="input-group-prepent">
-                {{ bank.as_p }}
-                <button type="submit" , name="add" class="btn btn-success" , value="add">Add Money</button>
-                <button type="submit" , name="withdraw" class="btn btn-warning" , value="withdraw">Withdraw Money</button>
-            </div>
+
+    <div class="d-flex justify-content-center cont container">
+        <div class="account">
+            <h1> My balance </h1>
+            <h2 class="{{ blc }}"> {{ account.balance }} USD </h2>
+            <form method="post" action="bank" class="form-group">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <div class="input-group-prepent">
+                        {{ bank.as_p }}
+                        <button type="submit" , name="add" class="btn btn-success" , value="add">Add Money</button>
+                        <button type="submit" , name="withdraw" class="btn btn-warning" , value="withdraw">Withdraw
+                            Money
+                        </button>
+                        <button type="submit" , name="send-acc" class="btn btn-warning" , value="withdraw">Recharge Wallet
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="account">
+            <h1> My Wallet </h1>
+            <h2 class="green"> {{ wallet.balance }} USD </h2>
+            <form method="post" action="bank" class="form-group">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <div class="input-group-prepent">
+                        {{ bank.as_p }}
+                        <button type="submit" , name="withdraw-wal" class="btn btn-warning" , value="withdraw">Withdraw
+                            Money
+                        </button>
+                         <button type="submit" , name="send-wal" class="btn btn-warning" , value="withdraw">Send Money
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        {% if messages %}
+
+                    {% for message in messages %}
+                        <h3  {% if message.tags %} class="{{ message.tags }} tag"{% endif %}>{{ message }}</h3>
+                    {% endfor %}
+
+            {% endif %}
         </div>
 
-    </form>
+    </div>
+
+
+
+
 {% endblock %}

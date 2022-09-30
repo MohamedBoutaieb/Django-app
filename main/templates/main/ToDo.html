@@ -16,8 +16,10 @@
     {% csrf_token %}
     <ul class="list-group">
     {% for todo in todos %}
-        <li class="list-group-item "><a class="anchor" href="/{{ todo.id }}">{{ todo.name }} </a> </li>
-        <button type="submit" name="del" value="{{todo.id}}" class="btn btn-danger"> Delete </button>
+        <div class="cont">   <li class="list-group-item "><a class="anchor" href="/{{ todo.id }}">{{ todo.name }} </a> </li>
+
+        <button type="submit" name="del" value="{{todo.id}}" class="btn btn-danger"> Delete </button></div>
+ <hr>
         {% endfor %}
     </ul>
     </form>

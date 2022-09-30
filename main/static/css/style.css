@@ -26,7 +26,9 @@
 
     justify-content: space-around;
 }
-
+.list-group-item{
+    width: 20vw;
+}
 .sidenav .items {
     text-decoration: none;
     font-size: 2vw;
@@ -34,6 +36,16 @@
     transition: 0.5s ease;
     gap: 4vh;
     text-align: center;
+}
+.account{
+    border: 1px solid black;
+    border-radius: 15px;
+    width : 30vw;
+    padding : 5px 30px;
+}
+.cont{
+    display: flex;
+    gap: 5vw;
 }
 a {
     text-decoration: none;
@@ -45,6 +57,11 @@ a {
 .anchor:hover{
     text-decoration: none;
     color: black;
+}
+.tag{
+    text-align: center;
+    position: absolute;
+    width:27vw;
 }
 ul{
      text-decoration: none;
