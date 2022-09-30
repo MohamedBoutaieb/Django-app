@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import ToDoList, Item, BankAccount
 from .forms import CreateNewList, Bank
 from django.contrib import messages
-
+import datetime
 
 # Create your views here.
 
@@ -33,7 +33,7 @@ def index(response, id):
 
 
 def home(response):
-    return render(response, "main/home.html", {})
+    return render(response, "main/home.html", {"date":datetime.datetime.now()})
 
 
 def create(response):
