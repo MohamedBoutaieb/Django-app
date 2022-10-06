@@ -1,4 +1,4 @@
-#Django Project#
+http://mohamedboutaieb.pythonanywhere.com/home/
 
 <H1>Description</H1>
 This project is meant to demonstrate different Django functionalities from the view , models ,services, routing etc..
